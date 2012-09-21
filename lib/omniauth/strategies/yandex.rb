@@ -16,6 +16,8 @@ module OmniAuth
         :authorize_url => '/authorize'
       }
 
+      option :provider_ignores_state, true
+
       uid do
         raw_info[:uid]
       end
