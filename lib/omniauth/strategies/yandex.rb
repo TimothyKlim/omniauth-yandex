@@ -57,7 +57,8 @@ module OmniAuth
           data = JSON.parse(json_data)
 
           {
-            uid: data["id"]
+            uid: data['id'],
+            email: data['default_email']
           }
         end
       end
